@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>project 1</title>
+</head>
+
+<body>
+    <nav class="nav-bar bgr navheight">
+        <ul class="nav-list navvisible">
+            <div class="logo"><img src="img\logo.webp" alt="logo"></div>
+            <li> <a href="#Home">Home</a></li>
+            <li> <a href="#Services">Services</a></li>
+            <li> <a href="#About">About</a></li>
+            <li> <a href="#Contact">Contact us</a></li>
+        </ul>
+        <div class="rnav navvisible">
+            <input type="text" placeholder="Search.." name="search" id="search">
+            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="burgur">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="bgr1 firstsection">
+        <div class="mainsection">
+            <div class="leftcontent">
+                <p class="big1">This is project 1</p>
+                <p class="small1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo accusamus
+                    quia sed ipsa doloreducimus! Et ipsa qui aspernatur! Distinctio velit accusantium modi? Nobis,
+                    laboriosam veritatis?
+                    Inventore, magni sed.
+                </p>
+                <div class="buttons">
+                    <button class="btn-sm">subscribe</button>
+                    <button class="btn-sm">watch video</button>
+                </div>
+            </div>
+            <div class="rightcontent">
+                <img src="img\img1.jpeg" alt="img1">
+            </div>
+        </div>
+    </section>
+
+    <section class="headsection">
+        <div class="mainsection1">
+            <div class="leftcontent1">
+                <p class="big1">I am making website</p>
+                <p class="small1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam odio
+                    recusandae quis accusamus. Perferendis odit ullam tenetur! Earum doloribus fugit vel cupiditate
+                    ratione
+                    et, dicta minima consequuntur. Distinctio, quia.</p>
+            </div>
+            <div class="rightcontent1">
+                <img src="https://images.unsplash.com/photo-1675684458828-51a73fd94b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img2">
+            </div>
+        </div>
+    </section>
+
+    <section class="headsection">
+        <div class="mainsection1 left">
+            <div class="leftcontent1">
+                <p class="big1">I am making website</p>
+                <p class="small1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam odio
+                    recusandae quis accusamus. Perferendis odit ullam tenetur! Earum doloribus fugit vel cupiditate
+                    ratione
+                    et, dicta minima consequuntur. Distinctio, quia.</p>
+            </div>
+            <div class="rightcontent1">
+                <img src="https://images.unsplash.com/photo-1675684458828-51a73fd94b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img2">
+            </div>
+        </div>
+    </section>
+
+    <section class="headsection">
+        <div class="mainsection1">
+            <div class="leftcontent1">
+                <p class="big1">I am making website</p>
+                <p class="small1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam odio
+                    recusandae quis accusamus. Perferendis odit ullam tenetur! Earum doloribus fugit vel cupiditate
+                    ratione
+                    et, dicta minima consequuntur. Distinctio, quia.</p>
+            </div>
+            <div class="rightcontent1">
+                <img src="https://images.unsplash.com/photo-1675684458828-51a73fd94b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="img2">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    <section class="contact" id="Contact">
+        <h1 class="text1">Contact us</h1>
+        <div class="inputs">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea name="self" id="self" cols="30" rows="10">About yourself</textarea>
+        </div>
+
+        <button class="btn3">submit</button>
+    </section>
+
+    <footer class="foot bgr">
+        <p class="text2">
+            copyright &copy; all rights reserved
+        </p>
+    </footer>
+
+    <script>
+        let burgur = document.querySelector('.burgur');
+        let navbar = document.querySelector('.nav-bar');
+        let rightnav = document.querySelector('.rnav');
+        let navlist = document.querySelector('.nav-list');
+
+        burgur.addEventListener('click', ()=>{
+            navlist.classList.toggle('navvisible');
+            rightnav.classList.toggle('navvisible');
+            navbar.classList.toggle('navheight');
+        })
+       
+
+    </script>
+
+</body>
+
+</html>
